@@ -63,10 +63,74 @@
 
 // practice arrays methods
 
-let campanies= ["bloomberg","microsoft","uber","Google","IBM","Netflix"]
+// let campanies= ["bloomberg","microsoft","uber","Google","IBM","Netflix"]
 
-let remove =campanies.splice(2,1,"Ola")
-console.log(remove)
-let add = campanies.push("Amazone")
-console.log(add)
-console.log(campanies)
+// let remove =campanies.splice(2,1,"Ola")
+// console.log(remove)
+// let add = campanies.push("Amazone")
+// console.log(add)
+// console.log(campanies)
+
+// practice of function in js 
+
+// arrow function
+
+// const multiply = (a,b) =>{ 
+//     console.log (a*b)
+// };
+
+// practice question 1
+
+// function countvowel(str){
+//     let count =0;
+//     for (const char of  str){
+//     if (char ==="a"|| char ==="e"|| char ==="i" || char ==="o"|| char ==="u"){
+//         count++
+//     }
+// }
+// return count;
+// }
+
+// const arrowFunction = (str) => {
+//     let count = 0;
+//     for (const val of str) {
+//         if (val === "a" || val === "e" || val === "i" || val === "o" || val === "u") {
+//             count++;
+//         }
+//     }
+//     return count;
+
+// }
+
+// practice question no 2
+
+// let psl_teams = ["karachi kings", "lahore laqandar", "islamabad united", "quetta gladiators", "peshawar zalmi", "multan sultan"];
+// psl_teams.forEach((element,idx)=> {
+//     console.log(element.toUpperCase(),idx, psl_teams)
+// });
+
+// question no 3
+
+// let num =[28,55,97,61,25,99,91,95];
+// let newMarks=num.filter((val)=>{
+//     return val>90;
+// });
+
+//  console.log(newMarks)
+
+// qustion no 4
+
+let n = prompt("enter your number :")
+let arr =[];
+for(let i=1; i<=n; i++){
+    arr[i-1]=i;
+}
+let newSum=arr.reduce((prev , curr)=>{
+    return prev + curr;
+})
+console.log(newSum)
+
+let factorial =arr.reduce((res,curr)=>{
+    return res*curr;
+})
+console.log(factorial)
